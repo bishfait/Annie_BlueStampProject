@@ -30,8 +30,8 @@ Focusing on the modifications of the MagicMirror, I set up and programmed the ul
 ## Challenges
 ### Wiring the Ultrasonic Sensor
 Figuring out how to wire the Raspberry Pi to the ultrasonic sensor was a difficulty that I encountered. The Raspberry Pi 400, similar to a Raspberry Pi 4, has many pins(40  pins) and figuring out which pins that the ultrasonic sensor had to be plugged into was difficult. An ultrasonic sensor has four pins: VCC, GND, Trig, and Echo. VCC and GND are the power supply pins. The trig pin sends an ultrasonic wave, which can hit an obstacle and gets reflected back. The reflected wave is received by the receiver of the sensor and goes from the initial state of HIGH to LOW when the wave is received. In addition, the ultrasonic sensor operates on 5V, but sending a 5V output signal from the echo pin to the GPIO(General Purpose Input/Output of Rpi would damage the pin since it is rated at 3.3V. Thus, a voltage divider circuit is necessary to turn 5V into 3.3V by using two series resistors.
-<h1 align="center"><img src="circuitDiagram.jpg" width="200"/></h1>
-<h1 align="center"><img src="Image 6-21-23 at 10.06 AM.jpg" width="400"/></h1>
+<h1 align="center"><img src="circuitDiagram.jpg" width="400"/></h1>
+<h1 align="center"><img src="Image 6-21-23 at 10.06 AM.jpg" width="200"/></h1>
 Plugging in the power supply pins into the correct pins of the Raspberry Pi was the simple part; figuring out the correct set up for the echo and trig pins were the challenging part. The echo pin required the voltage divider pin. With a lot of research, on the Raspberry Pi 400 the trig pin goes into GPIO 11(pin 23) and the echo pin goes into GPIO 12(pin 32). 
 
 ### Coding the Sensor with Python
