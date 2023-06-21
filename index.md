@@ -25,7 +25,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 <<**video**>>
 
 ## Progress
-Focusing on the modifications of the MagicMirror, I set up and programmed the ultrasonic sensor to turn on or off the mirror's monitor whether an obstacle is in distance or not. This is to mimic someone standing in front of a mirror, and that certain distance is the distance from the mirror to the person. Basically, if an object is in a certain distance in front of the sensor, the MagicMirror will turn on and stay on as long as the object is within the vicinity. When the sensor cannot detect any obstacles in front of it, it will wait fifteen seconds before turning the mirror off. After the mirror is off, any detected obstacles can turn on the mirror again. In essence, the mirror can be turned on and off multiple times and continuously detect for obstacles to turn on or off the mirror. In addition, I coded the sensor to wait five minutes before terminating the code, so it will stop running after a period of inactivity.
+Focusing on the modifications of the MagicMirror, I set up and programmed the ultrasonic sensor to turn on or off the mirror's monitor whether an obstacle is in distance or not. This is to mimic someone standing in front of a mirror, and that certain distance is the distance from the mirror to the person. Basically, if an object is in a certain distance in front of the sensor, the MagicMirror will turn on and stay on as long as the object is within the vicinity. When the sensor cannot detect any obstacles in front of it, it will wait fifteen seconds before turning the mirror off. After the mirror is off, any detected obstacles can turn on the mirror again. In essence, the mirror can be turned on and off multiple times and continuously detect for obstacles to turn on or off the mirror. In addition, I coded the sensor to wait three minutes before terminating the code, so it will stop running after a period of inactivity.
 
 ## Challenges
 ### Wiring the Ultrasonic Sensor
@@ -38,8 +38,12 @@ Plugging in the power supply pins into the correct pins of the Raspberry Pi was 
 <h6 align="center">Raspberry Pi 400 GPIO Pinout Diagram</h6>
 
 ### Coding the Sensor with Python
+Another challenge was coding the ultrasonic sensor. I had barely worked with Python before, and figuring out the commands for the ultrasonic sensor took time. Importing modules including time and for circuitry was essential. In addition, I wanted the code to run terminal commands in order to startup or terminate the MagicMirror program. After more research, I grew familiar with Python and found the right commands to code the desired outcome.
 
 ## Next Steps
+After completing the modifications of the mirror, it is time to move onto the set up and coding of the individual addressable LED lights. After the LED
+
+
 # First Milestone: Intensive Project-- Smart Mirror
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TV7BxGYUKKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
