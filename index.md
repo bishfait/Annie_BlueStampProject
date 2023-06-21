@@ -33,9 +33,9 @@ Figuring out how to wire the Raspberry Pi to the ultrasonic sensor was a difficu
 
 Plugging in the power supply pins into the correct pins of the Raspberry Pi was the simple part; figuring out the correct set up for the echo and trig pins were the challenging part. The echo pin required the voltage divider pin. With a lot of research, on the Raspberry Pi 400 the trig pin goes into GPIO 11(pin 23) and the echo pin goes into GPIO 12(pin 32). 
 <h1 align="center"><img src="circuitDiagram.jpg" width="500"/></h1>
-<h5 align="center">Circuit of the ultrasonic sensor</h5>
+<h6 align="center">Circuit of the ultrasonic sensor</h6>
 <h1 align="center"><img src="Image 6-21-23 at 10.06 AM.jpg" width="200"/></h1>
-<h5 align="center">Raspberry Pi 400 GPIO Pinout Diagram</h5>
+<h6 align="center">Raspberry Pi 400 GPIO Pinout Diagram</h6>
 
 ### Coding the Sensor with Python
 
