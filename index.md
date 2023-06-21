@@ -41,7 +41,7 @@ Plugging in the power supply pins into the correct pins of the Raspberry Pi was 
 Another challenge was coding the ultrasonic sensor. I had barely worked with Python before, and figuring out the commands for the ultrasonic sensor took time. Importing modules including time and for circuitry was essential. In addition, I wanted the code to run terminal commands in order to startup or terminate the MagicMirror program. After more research, I grew familiar with Python and found the right commands to code the desired outcome.
 
 ## Next Steps
-After completing the modifications of the mirror, it is time to move onto the set up and coding of the individual addressable LED lights. After the LED
+After completing the modifications of the mirror, it is time to move onto the set up and coding of the individual addressable LED lights. After the LED has been set up, the mirror can be assembled: the monitor, the plywood, the LEDs, and the mirror itself. Any last modifications of the MagicMirror display itself can be the final steps prior to its completion.
 
 
 # First Milestone: Intensive Project-- Smart Mirror
