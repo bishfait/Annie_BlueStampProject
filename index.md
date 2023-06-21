@@ -20,6 +20,20 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+# Second Milestone
+
+<<**video**>>
+
+## Progress
+Focusing on the modifications of the MagicMirror, I set up and programmed the ultrasonic sensor to turn on or off the mirror's monitor whether an obstacle is in distance or not. This is to mimic someone standing in front of a mirror, and that certain distance is the distance from the mirror to the person. Basically, if an object is in a certain distance in front of the sensor, the MagicMirror will turn on and stay on as long as the object is within the vicinity. When the sensor cannot detect any obstacles in front of it, it will wait fifteen seconds before turning the mirror off. After the mirror is off, any detected obstacles can turn on the mirror again. In essence, the mirror can be turned on and off multiple times and continuously detect for obstacles to turn on or off the mirror. In addition, I coded the sensor to wait five minutes before terminating the code, so it will stop running after a period of inactivity.
+
+## Challenges
+### Wiring the Ultrasonic Sensor
+Figuring out how to wire the Raspberry Pi to the ultrasonic sensor was a difficulty that I encountered. The Raspberry Pi 400, similar to a Raspberry Pi 4, has many pins 
+
+### Coding the Sensor with Python
+
+## Next Steps
 # First Milestone: Intensive Project-- Smart Mirror
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TV7BxGYUKKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
