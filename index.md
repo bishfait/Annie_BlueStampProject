@@ -22,7 +22,6 @@
 
 # Second Milestone
 
-<<**video**>>
 
 ## Progress
 Focusing on the modifications of the MagicMirror, I set up and programmed the ultrasonic sensor to turn on or off the mirror's monitor whether an obstacle is in distance or not. This is to mimic someone standing in front of a mirror, and that certain distance is the distance from the mirror to the person. Basically, if an object is in a certain distance in front of the sensor, the MagicMirror will turn on and stay on as long as the object is within the vicinity. When the sensor cannot detect any obstacles in front of it, it will wait fifteen seconds before turning the mirror off. After the mirror is off, any detected obstacles can turn on the mirror again. In essence, the mirror can be turned on and off multiple times and continuously detect for obstacles to turn on or off the mirror. In addition, I coded the sensor to wait three minutes before terminating the code, so it will stop running after a period of inactivity.
@@ -36,6 +35,8 @@ Plugging in the power supply pins into the correct pins of the Raspberry Pi was 
 <h6 align="center">Circuit of the ultrasonic sensor, Colorcoded</h6>
 <h1 align="center"><img src="Image 6-21-23 at 10.06 AM.jpg" width="200"/></h1>
 <h6 align="center">Raspberry Pi 400 GPIO Pinout Diagram</h6>
+
+
 
 ### Coding the Sensor with Python
 Another challenge was coding the ultrasonic sensor. I had barely worked with Python before, and figuring out the commands for the ultrasonic sensor took time. Importing modules including time and for circuitry was essential. In addition, I wanted the code to run terminal commands in order to startup or terminate the MagicMirror program. After more research, I grew familiar with Python and found the right commands to code the desired outcome.
@@ -129,9 +130,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 |:--:|:--:|:--:|:--:|
 | Power Strip | Powers Smart Mirror components. | $16.99 | <a href="https://www.amazon.com/gp/product/B092J8LPWR?ie=UTF8&psc=1&linkCode=sl1&tag=qtkwa-20&linkId=2711afc9129fc98b2bd0b14730062c9a&language=en_US&ref_=as_li_ss_tl"> Link </a> |
 |:--:|:--:|:--:|:--:|
-
+<!--
 # Other Resources/Examples
-<!--One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
+One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
