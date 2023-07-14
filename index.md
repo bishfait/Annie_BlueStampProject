@@ -10,6 +10,11 @@
 <h1 align="center"><img src="annieHeadshot.png" width="400"/></h1>
   
 # Final Milestone
+
+<!--After soldering and sticking the LEDs onto the wood along with the assembly of the mirror, the smart mirror was basically finished. 
+
+## Challenges
+Many challenges arose from the coding aspect -->
 <!--For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
