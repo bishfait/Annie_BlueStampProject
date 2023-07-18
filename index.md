@@ -128,20 +128,243 @@ The challenging aspect of this project was wiring the LED. In an LED, there is a
 
 # Code
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. -->
+```
+#python3/leds.py
+import time
+import random
+import board
+import neopixel
 
-<style>
-div.scroll {
-  Width-5px;
-  Height-10 px;
-  Overflow-y:scroll;
-}
-</style>
-```python3
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
+#led setup
+pixPin = board.D18
+pixCount = 107
+ORDER = neopixel.GRB
+pixels = neopixel.NeoPixel(pixPin, pixCount, brightness=0.5, auto_write = False, pixel_order = ORDER)
+
+rand = 0
+red = 0
+green = 0
+blue = 0
+
+def wheel(pos):
+  # Input a value 0 to 255 to get a color value.
+  # The colours are a transition r - g - b - back to r.
+  if pos < 0 or pos > 255:
+  r = g = b = 0
+    elif pos < 85:
+      r = int(pos * 3)
+      g = int(255 - pos * 3)
+      b = 0
+    elif pos < 170:
+      pos -= 85
+      r = int(255 - pos * 3)
+      g = 0
+      b = int(pos * 3)
+    else:
+      pos -= 170
+      r = 0
+      g = int(pos * 3)
+      b = int(255 - pos * 3)
+    return (r, g, b) if ORDER in (neopixel.RGB, neopixel.GRB) else (r, g, b, 0)
+
+def rainbow_cycle(wait):
+  for j in range(255):
+    for i in range(pixCount):
+      pixel_index = (i * 256 // pixCount) + j
+      pixels[i] = wheel(pixel_index & 255)
+    pixels.show()
+    time.sleep(wait)
+
+def fadeIn(r,g,b):
+  p=0
+  q=0
+  n=0
+  while p < r+1 or q < g+1 or n < b+1:
+    pixels.fill((p, q, n))
+    pixels.show()
+    time.sleep(0.01)
+    if p < r+1:
+      p += 1
+    if q < g+1:
+      q += 1
+    if n < b+1:
+      n += 1
+  
+def fadeOut(r,g,b):
+  x=r
+  y=g
+  z=b
+  while x >= 0 or y >= 0 or z >= 0:
+    pixels.fill((x,y,z))
+    pixels.show()
+    time.sleep(0.01)
+    if x>0:
+      if x > 175:
+        x -=4
+      elif x > 125:
+        x -= 2
+      else:
+        x -=1
+    if y>0:
+      if y > 175:
+        y -= 4 
+      elif y > 125:
+        y -= 2
+      else: 
+        y -= 1
+    if z>0:
+      if z > 175:
+        z -= 4
+      elif z > 125:
+        z -= 2
+    else:
+      z-= 1
+   if x==0 and y==0 and z==0:
+    break
+    #print("r: ", x, " g: ", y, "  b: ", z)
+
+def colorRandomizer(num):
+  num = random.randint(0,255)
+  return num
+
+def numRandomizer(n):
+  n = random.randint(1,10)
+  return n
+<!--
+def turnLightOn():
+  random = numRandomizer(random)
+  if rand == 1:
+    rainbow_cycle(0.01) #rainbow ombre
+    print("rainbow cycle")
+  elif rand == 2:
+    red = 86
+    green = 245
+    blue = 154
+    fadeIn(red, green, blue) #aquamarine
+    print("aquamarine")
+  elif rand == 3:
+    red = 247
+    green = 57
+    blue = 85
+    fadeIn(red, green, blue) #pastel magenta
+    print("pastel magenta")
+  elif rand == 4:
+    red = 210
+    green = 210
+    blue = 252
+    fadeIn(red, green, blue) #periwinkle
+    print("periwinkle")
+  elif rand == 5:
+    red = 64
+    green = 97
+    blue = 245
+    fadeIn(red, green, blue) #pastel blue
+    print("pastel blue")
+  elif rand == 6:
+    red = 245
+    green = 101
+    blue = 91
+    fadeIn(red, green, blue) #pink
+    print("pink")
+  elif rand == 7: 
+    red = colorRandomizer(red)
+    blue = colorRandomizer(blue)
+    green = colorRandomizer(green)
+    fadeIn(red, green, blue) #random!
+    print("random!!")
+  elif rand == 8:
+    red = 10
+    green = 10
+    blue = 200
+    fadeIn(red, green, blue) #blue
+    print("blue")
+  elif rand == 9:
+    red = 200
+    green = 7
+    blue = 7
+    fadeIn(red, green, blue) #red
+    print("red")
+  elif rand == 10:
+    red = 150
+    green = 150
+    blue = 150
+    fadeIn(red, green, blue) #white
+    print("white")
+
+def turnLightOff():
+  if random > 1:
+    fadeOut(red, green, blue)
+ else:
+    pixels.fill((0,0,0))
+-->
+
+while True:
+  rand = numRandomizer(rand)
+    if rand == 1:
+      rainbow_cycle(0.01) #rainbow ombre
+      print("rainbow cycle")
+    elif rand == 2:
+      red = 86
+      green = 245
+      blue = 154
+      fadeIn(red, green, blue) #aquamarine
+      print("aquamarine")
+    elif rand == 3:
+      red = 247
+      green = 57
+      blue = 85
+      fadeIn(red, green, blue) #pastel magenta
+      print("pastel magenta")
+  elif rand == 4:
+      red = 210
+      green = 210
+      blue = 252
+      fadeIn(red, green, blue) #periwinkle
+      print("periwinkle")
+  elif rand == 5:
+      red = 64
+      green = 97
+      blue = 245
+      fadeIn(red, green, blue) #pastel blue
+      print("pastel blue")
+  elif rand == 6:
+      red = 245
+      green = 101
+      blue = 91
+      fadeIn(red, green, blue) #pink
+      print("pink")
+  elif rand == 7: 
+      red = colorRandomizer(red)
+      blue = colorRandomizer(blue)
+      green = colorRandomizer(green)
+      fadeIn(red, green, blue) #random!
+      print("random!!")
+  elif rand == 8:
+      red = 10
+      green = 10
+      blue = 200
+      fadeIn(red, green, blue) #blue
+      print("blue")
+  elif rand == 9:
+      red = 200
+      green = 7
+      blue = 7
+      fadeIn(red, green, blue) #red
+      print("red")
+  elif rand == 10:
+      red = 150
+      green = 150
+      blue = 150
+      fadeIn(red, green, blue) #white
+      print("white")
+
+  time.sleep(120)
+  if rand > 1:
+    fadeOut(red, green, blue)
+  else:
+    pixels.fill((0,0,0))
+
+  time.sleep(5)
 
 void loop() {
   // put your main code here, to run repeatedly:
