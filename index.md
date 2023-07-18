@@ -11,10 +11,27 @@
   
 # Final Milestone
 
-<!--After soldering and sticking the LEDs onto the wood along with the assembly of the mirror, the smart mirror was basically finished. 
+After soldering and sticking the LEDs onto the wood along with the assembly of the mirror, the smart mirror was basically finished. A piece of 18 in x 24in plywood was cut for the monitor to be placed in. Grooves were made into the wood with a router tool for the LEDs to go into. After the plywood was cut, it was painted black. Before mounting the monitor into the plywood and frame, I had to solder and stick the LEDs into place. Since I wanted to make the LEDs go around the monitor, I cut the strip into each side of the rectangle and soldered the corners together. A hole was made at one corner of the grooves for the LED wiring to go through. 
+
+I put a TV mount on top of the monitor. Using that, nylon webbing can be threaded through the holes of the mount and then secured using grommets and screws. The screws are drilled into the back of the plywood. However, there was not a thick enough screw that could hold the eyelets in place without it being drilled into the mirror. Thus, I used shorter screws and secured them using washers. 
+
+Finally, I secured the ultrasonic sensor at the top of the frame, for the time being. I did not secure the raspberry pi in for any further modifications or turning on the mirror. I made final adjustments to the appearance of the smart mirror widgets and covered any imperfections behind the screen with electrical tape.
 
 ## Challenges
-Many challenges arose from the coding aspect -->
+Many challenges arose from the assembly of the mirror. I did not account that drilling in the screws to secure the grommets could've went through the LED strips, thus damaging them. I had to take apart the mirror to fix the individual LEDs that were broken through soldering. After the LEDs were fixed, I reassembled the mirror and then mounted the monitor, watching where the grommets went. 
+
+I had a lot of difficulty with all of the coding and wiring behind the mirror as well. Often wiring the ultrasonic wrong meant the whole code would terminate itself. I had a faulty ultrasonic once, and I didn't realize until I tried with another ultrasonic sensor. Making sure the ground wire was in place is very important for the LEDs otherwise it could physically damage the LEDs. It was hard to pinpoint what was the issue sometimes, whether it was the code or the circuitry. 
+
+Another challenge was that the code for the LEDs and the ultrasonic sensor could not work together. The LEDs required root access, basically admin, to work. The ultrasonic sensor worked with the command, however, the magic mirror application did not. I could not find a solution for the LEDs and magic mirror to work in one file of code. Thus, I compromised by breaking the necessary code into two. One file had the LED code and the other file had the code for the ultrasonic sensor and the magic mirror. Although it wasn't what I wanted the code to do exactly, this solution allowed the LEDs and mirror to work together.
+
+Despite all of these challenges, all of these issues were resolved for the completion of the mirror. Figuring out each issue in the end was very fulfilling, pushing me forward a step towards the completion of the project. 
+
+## What I learned
+I learned a lot about aspects of electrical and mechanical engineering along with computer science. I already knew a decent amount of coding from taking a class in my school on Java, but I learned about other languages too, including CSS, Javascript, and Python. I learned the most about Python and feel very comfortable using the language. I feel like my familiarity with Python is on par with Java. After learning one language, learning other coding languages is not hard since the basic components are there. Python was a key aspect in making the mirror work since it was necessary for the ultrasonic sensor and LEDs.
+
+I learned about soldering wires together and grew comfortable using a soldering iron, including the safety necessary behind it. I had already worked with circuits on breadboards, but I had never made it permanent through soldering. I learned how a voltage divider works, which was necessary for connecting the ultrasonic sensor. I already learned a bit about how circuits work, but the concept of a voltage divider was new to me. Basically, a voltage divider is a circuit that turns a large voltage into a smaller one. Using a series of resistors, a voltage drop is achieved.
+
+Lastly, I learned a lot about using the different tools necessary for the assembly of the mirror. I learned how to drill in screws to secure the plywood to the frame and then use an impact drill to drill in the screws. The impact drill was necessary for drilling in the grommets into place as well. At first, I felt very intimidated by these tools. However, after learning how they work and the safety needed during their use, I feel a lot more comfortable using these tools.
 <!--For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
@@ -26,7 +43,7 @@ Many challenges arose from the coding aspect -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 # Second Milestone
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B98T8BYGad0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Progress
 Focusing on the modifications of the MagicMirror, I set up and programmed the ultrasonic sensor to turn on or off the mirror's monitor whether an obstacle is in distance or not. This is to mimic someone standing in front of a mirror, and that certain distance is the distance from the mirror to the person. Basically, if an object is in a certain distance in front of the sensor, the MagicMirror will turn on and stay on as long as the object is within the vicinity. When the sensor cannot detect any obstacles in front of it, it will wait fifteen seconds before turning the mirror off. After the mirror is off, any detected obstacles can turn on the mirror again. In essence, the mirror can be turned on and off multiple times and continuously detect for obstacles to turn on or off the mirror. In addition, I coded the sensor to wait three minutes before terminating the code, so it will stop running after a period of inactivity.
