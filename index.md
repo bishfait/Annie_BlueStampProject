@@ -230,8 +230,9 @@ def colorRandomizer(num):
 def numRandomizer(n):
   n = random.randint(1,10)
   return n
-``` <!--
-def turnLightOn():
+```
+
+<!-- def turnLightOn():
   random = numRandomizer(random)
   if rand == 1:
     rainbow_cycle(0.01) #rainbow ombre
@@ -296,7 +297,8 @@ def turnLightOff():
     fadeOut(red, green, blue)
  else:
     pixels.fill((0,0,0))
--->```
+-->
+```
 
 while True:
   rand = numRandomizer(rand)
