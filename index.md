@@ -37,6 +37,7 @@ I learned about soldering wires together and grew comfortable using a soldering 
 <h6 align="center">Formula for a voltage divider</h6>
 
 Lastly, I learned a lot about using the different tools necessary for the assembly of the mirror. I learned how to drill in screws to secure the plywood to the frame and then use an impact drill to drill in the screws. The impact drill was necessary for drilling in the grommets into place as well. At first, I felt very intimidated by these tools. However, after learning how they work and the safety needed during their use, I feel a lot more comfortable using these tools.
+
 <!--For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
