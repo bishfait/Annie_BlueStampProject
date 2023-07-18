@@ -365,11 +365,91 @@ while True:
     pixels.fill((0,0,0))
 
   time.sleep(5)
+```
 
-void loop() {
-  // put your main code here, to run repeatedly:
+```
+#python3/mirror.py
+import time
+import RPi.GPIO as GPIO
+import subprocess
 
-}
+
+#ultrasonic sensor setup
+#GPIO mode
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+#set GPIO pins
+trig = 11
+echo = 12
+
+#setup
+GPIO.setup(trig, False)
+GPIO.setup(echo, True)
+
+#necessary variables
+counter = 0
+cmToIn = 0.3937 #conversion from cm to inch
+check = False #is mirror on? false = off, true = on
+distanceFromMirror = 12 #manually set(in inches)
+inactivity = False
+distance = 0
+tempDistance = 0
+#rand = 0
+
+#ultrasonic sensor methods
+def getDistance(x): #gets distance every second
+  #trigpin check
+  GPIO.output(trig, False)
+  time.sleep(1)
+
+  GPIO.output(trig, True)
+  time.sleep(0.00001)
+  GPIO.output(trig, False)
+
+  while GPIO.input(echo) == 0:
+    timeStart = time.time()
+
+  while GPIO.input(echo) == 1:
+    timeEnd = time.time()
+
+  duration = timeEnd - timeStart
+  #print("timeend=", timeEnd, "  timeStart: ", timeStart)
+  distance = round(duration * 17150 * cmToIn, 2)
+  x = distance
+  return x
+
+def runMirror():
+  subprocess.run("pm2 start mm.sh", shell=True, cwd="/home/annie")
+  #subprocess.run("npm run start", shell=True, cwd="/home/annie/MagicMirror")
+  check = True
+
+def stopMirror():
+  subprocess.run("pm2 stop mm", shell = True, cwd = "/home/annie")
+  check = False
+
+while True:
+  distance = getDistance(distance)
+  print("Distance: ", distance, " in")
+  while distance < distanceFromMirror and check == False:
+    print("Running Smart Mirror...")
+    runMirror()
+    check = True
+
+  while distance > distanceFromMirror and check == True:
+    tempDistance = getDistance(tempDistance)
+    if tempDistance < distanceFromMirror:
+      counter = 0
+      break
+    elif tempDistance > distanceFromMirror:
+      counter += 1
+      print("Timer: ", counter, " sec")
+      if counter == 15:
+        print("Turning Smart Mirror Off.")
+        stopMirror()
+        check = False
+        counter = 0
+        break
 ```
 # Bill of Materials
 <!--Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
