@@ -128,6 +128,73 @@ The challenging aspect of this project was wiring the LED. In an LED, there is a
 
 # Code
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. -->
+<!-- #after numRandomizer() method
+def turnLightOn():
+  random = numRandomizer(random)
+  if rand == 1:
+    rainbow_cycle(0.01) #rainbow ombre
+    print("rainbow cycle")
+  elif rand == 2:
+    red = 86
+    green = 245
+    blue = 154
+    fadeIn(red, green, blue) #aquamarine
+    print("aquamarine")
+  elif rand == 3:
+    red = 247
+    green = 57
+    blue = 85
+    fadeIn(red, green, blue) #pastel magenta
+    print("pastel magenta")
+  elif rand == 4:
+    red = 210
+    green = 210
+    blue = 252
+    fadeIn(red, green, blue) #periwinkle
+    print("periwinkle")
+  elif rand == 5:
+    red = 64
+    green = 97
+    blue = 245
+    fadeIn(red, green, blue) #pastel blue
+    print("pastel blue")
+  elif rand == 6:
+    red = 245
+    green = 101
+    blue = 91
+    fadeIn(red, green, blue) #pink
+    print("pink")
+  elif rand == 7: 
+    red = colorRandomizer(red)
+    blue = colorRandomizer(blue)
+    green = colorRandomizer(green)
+    fadeIn(red, green, blue) #random!
+    print("random!!")
+  elif rand == 8:
+    red = 10
+    green = 10
+    blue = 200
+    fadeIn(red, green, blue) #blue
+    print("blue")
+  elif rand == 9:
+    red = 200
+    green = 7
+    blue = 7
+    fadeIn(red, green, blue) #red
+    print("red")
+  elif rand == 10:
+    red = 150
+    green = 150
+    blue = 150
+    fadeIn(red, green, blue) #white
+    print("white")
+
+def turnLightOff():
+  if random > 1:
+    fadeOut(red, green, blue)
+ else:
+    pixels.fill((0,0,0))
+-->
 ```
 #python3/leds.py
 import time
@@ -230,75 +297,6 @@ def colorRandomizer(num):
 def numRandomizer(n):
   n = random.randint(1,10)
   return n
-```
-
-<!-- def turnLightOn():
-  random = numRandomizer(random)
-  if rand == 1:
-    rainbow_cycle(0.01) #rainbow ombre
-    print("rainbow cycle")
-  elif rand == 2:
-    red = 86
-    green = 245
-    blue = 154
-    fadeIn(red, green, blue) #aquamarine
-    print("aquamarine")
-  elif rand == 3:
-    red = 247
-    green = 57
-    blue = 85
-    fadeIn(red, green, blue) #pastel magenta
-    print("pastel magenta")
-  elif rand == 4:
-    red = 210
-    green = 210
-    blue = 252
-    fadeIn(red, green, blue) #periwinkle
-    print("periwinkle")
-  elif rand == 5:
-    red = 64
-    green = 97
-    blue = 245
-    fadeIn(red, green, blue) #pastel blue
-    print("pastel blue")
-  elif rand == 6:
-    red = 245
-    green = 101
-    blue = 91
-    fadeIn(red, green, blue) #pink
-    print("pink")
-  elif rand == 7: 
-    red = colorRandomizer(red)
-    blue = colorRandomizer(blue)
-    green = colorRandomizer(green)
-    fadeIn(red, green, blue) #random!
-    print("random!!")
-  elif rand == 8:
-    red = 10
-    green = 10
-    blue = 200
-    fadeIn(red, green, blue) #blue
-    print("blue")
-  elif rand == 9:
-    red = 200
-    green = 7
-    blue = 7
-    fadeIn(red, green, blue) #red
-    print("red")
-  elif rand == 10:
-    red = 150
-    green = 150
-    blue = 150
-    fadeIn(red, green, blue) #white
-    print("white")
-
-def turnLightOff():
-  if random > 1:
-    fadeOut(red, green, blue)
- else:
-    pixels.fill((0,0,0))
--->
-```
 
 while True:
   rand = numRandomizer(rand)
