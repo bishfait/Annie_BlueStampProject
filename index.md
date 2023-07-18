@@ -31,7 +31,7 @@ I learned a lot about aspects of electrical and mechanical engineering along wit
 
 I learned about soldering wires together and grew comfortable using a soldering iron, including the safety necessary behind it. I had already worked with circuits on breadboards, but I had never made it permanent through soldering. I learned how a voltage divider works, which was necessary for connecting the ultrasonic sensor. I already learned a bit about how circuits work, but the concept of a voltage divider was new to me. Basically, a voltage divider is a circuit that turns a large voltage into a smaller one. Using a series of resistors, a voltage drop is achieved.
 
-<h1 align="center"><img src="Image 7-18-23 at 11.45 AM.jpg" width="500"/></h1>
+<h1 align="center"><img src="Image 7-18-23 at 11.45 AM.jpg" width="200"/></h1>
 <h6 align="center">Diagram of a voltage divider. Vout is the desired voltage, which is less than Vin.</h6>
 <h1 align="center"><img src="Image 7-18-23 at 11.47 AM.jpg" width="500"/></h1>
 <h6 align="center">Formula for a voltage divider</h6>
