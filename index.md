@@ -10,8 +10,8 @@
 <h1 align="center"><img src="Annie-Project.png" width="250"/></h1>
 <h1 align="center"><img src="annieHeadshot.png" width="250"/></h1>
 -->
-![project](/Annie-Project.png)
-![headshot](/annieHeadshot.png)
+![project](/Annie-Project.png | width=100)
+![headshot](/annieHeadshot.png | width=100)
   
 # Final Milestone
 
