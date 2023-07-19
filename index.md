@@ -7,8 +7,7 @@
 
 <!--**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**-->
 
-<h6><img src="Annie-Project.png" width="250"/><h6>
-<h6><img src="annieHeadshot.png" width="250"/></h6>
+<h6><img src="Annie-Project.png" width="250"/><h6>  <h6><img src="annieHeadshot.png" width="250"/></h6>
   
 # Final Milestone
 
