@@ -213,7 +213,7 @@ def turnLightOff():
 -->
 
 ### Code for the individually addressable LEDs:
-<pre style="wraparound:#fdfdfd; border: none; width: 40pc">
+<pre style="background:#fdfdfd; border: none; height: 40pc">
 #python3/leds.py
 import time
 import random
@@ -386,7 +386,7 @@ while True:
 </pre>
 
 ### Code for the Ultrasonic Sensor and Turning On/Off MagicMirror2
-<pre style="wraparound:#fdfdfd; border: none; width: 40pc">  
+<pre style="background:#fdfdfd; border: none; height: 40pc">  
 #python3/mirror.py
 import time
 import RPi.GPIO as GPIO
