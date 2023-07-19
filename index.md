@@ -15,6 +15,7 @@
 <img src="https://github.com/bishfait/Annie_BlueStampProject/blob/gh-pages/annieHeadshot.png" width="200">
 -->
 ![](Annie-Project.png){:width="50%" height="50%"}
+![](annieHeadshot.png){:width="50%" height="50%"}
   
 # Final Milestone
 
