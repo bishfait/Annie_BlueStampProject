@@ -11,6 +11,7 @@
 <h1 align="center"><img src="annieHeadshot.png" width="250"/></h1>
 -->
 ![project](/Annie-Project.png)
+![headshot](/annieHeadshot.png)
   
 # Final Milestone
 
