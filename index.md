@@ -211,7 +211,9 @@ def turnLightOff():
  else:
     pixels.fill((0,0,0))
 -->
-```
+
+### Code for the individually addressable LEDs:
+<pre style="wraparound:#fdfdfd; border: none; height: 40pc">
 #python3/leds.py
 import time
 import random
@@ -381,9 +383,10 @@ while True:
     pixels.fill((0,0,0))
 
   time.sleep(5)
-```
+</pre>
 
-```
+### Code for the Ultrasonic Sensor and Turning On/Off MagicMirror2
+<pre style="wraparound:#fdfdfd; border: none; height: 40pc">  
 #python3/mirror.py
 import time
 import RPi.GPIO as GPIO
@@ -466,7 +469,7 @@ while True:
         check = False
         counter = 0
         break
-```
+</pre>
 # Bill of Materials
 <!--Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. -->
