@@ -411,16 +411,15 @@ counter = 0
 cmToIn = 0.3937 #conversion from cm to inch
 check = False #is mirror on? false = off, true = on
 distanceFromMirror = 12 #manually set(in inches)
-inactivity = False
+inactivityTimer = 30
 distance = 0
 tempDistance = 0
-#rand = 0
 
 #ultrasonic sensor methods
-def getDistance(x): #gets distance every second
+def getDistance(x): #gets distance every 2 seconds
   #trigpin check
   GPIO.output(trig, False)
-  time.sleep(1)
+  time.sleep(2)
 
   GPIO.output(trig, True)
   time.sleep(0.00001)
@@ -447,6 +446,7 @@ def stopMirror():
   subprocess.run("pm2 stop mm", shell = True, cwd = "/home/annie")
   check = False
 
+print("Smart Mirror Ready!")
 while True:
   distance = getDistance(distance)
   print("Distance: ", distance, " in")
@@ -461,9 +461,9 @@ while True:
       counter = 0
       break
     elif tempDistance > distanceFromMirror:
-      counter += 1
-      print("Timer: ", counter, " sec")
-      if counter == 15:
+      counter += 2
+      print("Smart Mirror Turning Off in: ", inactivityTimer-counter, " secs")
+      if counter == inactivityTimer:
         print("Turning Smart Mirror Off.")
         stopMirror()
         check = False
