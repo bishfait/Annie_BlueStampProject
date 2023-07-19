@@ -10,6 +10,7 @@
 <h1 align="center"><img src="Annie-Project.png" width="250"/></h1>
 <h1 align="center"><img src="annieHeadshot.png" width="250"/></h1>
 -->
+![project](/Annie_BlueStampProject/Annie-Project.png)
   
 # Final Milestone
 
