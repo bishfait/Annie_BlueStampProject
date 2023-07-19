@@ -461,18 +461,21 @@ while True:
 <!--Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. -->
 
-| **Part** | **Note** | **Price** | **Link** |
+| **Part** | **Note** | **Price(USD)** | **Link** |
 |:--:|:--:|:--:|:--:|
 | DIY Soldering RGB Practice Kit | The Starter Project. Practice for soldering | $7.99 | <a href="https://www.amazon.com/Soldering-Practice-Learning-Electronics-Training/dp/B0BKM3D927"> Link </a> |
 | Raspberry Pi 400 | Powers the Smart Mirror. | $70.00 | <a href="https://www.digikey.com/en/products/detail/raspberry-pi/SC0373/13282408"> Link </a> |
-|:--:|:--:|:--:|:--:|
-<!--
-| Wireless Mouse | Configures Raspberry Pi for the mirror display. Will be taken out later. | $7.79 | <a href="https://www.amazon.com/Wireless-TECKNET-Receiver-Portable-Adjustable/dp/B095HBY3RF?th=1"> Link </a> |
-|:--:|:--:|:--:|:--:|
+| Wireless Mouse | Configures Raspberry Pi for the mirror display. | $7.79 | <a href="https://www.amazon.com/Wireless-TECKNET-Receiver-Portable-Adjustable/dp/B095HBY3RF?th=1"> Link </a> |
 | Ultrasonic Distance Sensor | Tracks and calculates a person's distance from a mirror to turn on or off the mirror. | $4.50 | <a href="https://www.sparkfun.com/products/15569"> Link </a> |
-|:--:|:--:|:--:|:--:|
 | Power Strip | Powers Smart Mirror components. | $16.99 | <a href="https://www.amazon.com/gp/product/B092J8LPWR?ie=UTF8&psc=1&linkCode=sl1&tag=qtkwa-20&linkId=2711afc9129fc98b2bd0b14730062c9a&language=en_US&ref_=as_li_ss_tl"> Link </a> |
-|:--:|:--:|:--:|:--:| -->
+|WS2812B Individual Addressable LED Strip|Goes around the monitor behind the mirror.|$32.99|<a href="https://www.amazon.com/BTF-LIGHTING-Flexible-Individually-Addressable-Non-waterproof/dp/B01CDTEJBG?th=1"> Link </a>|
+|TV/Monitor Wall Mount|Mounts the mirror and monitor to a wall.| $24.99 | <a href="https://www.amazon.com/dp/B00ZKFRKIU/ref=sspa_dk_detail_0?psc=1&pd_rd_i=B00ZKFRKIU&pd_rd_w=NpFq1&content-id=amzn1.sym.d81b167d-1f9e-48b6-87d8-8aa5e473ea8c&pf_rd_p=d81b167d-1f9e-48b6-87d8-8aa5e473ea8c&pf_rd_r=ZFB3M2YBGTBNGR7KZRPM&pd_rd_wg=Lls5P&pd_rd_r=a5ab98a2-3174-4a0e-b8e7-f68a6ebf6cfc&s=office-products&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRzczMExYQ1dITFI0JmVuY3J5cHRlZElkPUEwODgyMDAxMk5PWERRVEpDUTYwWSZlbmNyeXB0ZWRBZElkPUEwNDU0MzI0MUVEWDFMNEtTTkIyVCZ3aWRnZXROYW1lPXNwX2RldGFpbF90aGVtYXRpYyZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="> Link </a>|
+|18in x 24in Semi-Transparent Mirror| Transparent mirror that is semi-transparent to see the monitor and LEDs. | $42.99 |<a href="https://www.amazon.com/SupremeTech-Acrylic-See-Through-Resistant-Transparent/dp/B07XTRCTQL/ref=sr_1_5?keywords=18+x+24+transparent+mirror&qid=1689800283&sr=8-5"> Link </a>|
+|18in x 24in x 1/4in Plywood | Only x1 Plywood needed. Cut a rectangle into the plywood to fit the monitor in. | $71.39 for 4 | <a href="https://www.amazon.com/Premium-Plywood-Perfect-Projects-Woodpeckers/dp/B07NWYN5K2/ref=sr_1_6?crid=1WK154IDSAJRR&keywords=18%2Bx%2B24%2Bplywood&qid=1689800390&sprefix=18%2Bx%2B24%2Bplyw%2Caps%2C348&sr=8-6&ufe=app_do%3Aamzn1.fos.18ed3cb5-28d5-4975-8bc7-93deae8f9840&th=1"> Link </a>|
+|2 oz. Black Acrylic Paint | Paint plywood and anything behind the mirror black. | $0.97 | <a href="https://www.amazon.com/Apple-Barrel-21985E-Surface-Acrylic/dp/B07BG4NH83/ref=sr_1_7?crid=1T4IH7UW641XX&keywords=black+acrylic+paint&qid=1689800559&sprefix=black+acrylic+pain%2Caps%2C151&sr=8-7"> Link </a> |
+| Black Electrical Tape | Covers any imperfections behind the mirror that the black paint cannot cover. In addition, good for temporarily binding components to the back of the plywood. | $12.60 | <a href="https://www.amazon.com/AmazonCommercial-Electrical-4-inch-60-feet-6-Pack/dp/B07YDRY8ZS/ref=sr_1_1_ffob_sspa?crid=1I6NMKH4MUOHR&keywords=black+electrical+tape&qid=1689800720&sprefix=black+electrical+tape%2Caps%2C145&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a>|
+| Mini PCB Prototype Breadboard | For the circuitry of the ultrasonic sensor, which requires a voltage divider circuit. | $9.99 | <a href="https://www.amazon.com/ElectroCookie-Solderable-Breadboard-Electronics-Gold-Plated/dp/B081MSKJJX/ref=sr_1_3?crid=1LVR7D95R3GD3&keywords=1%2F4+perf+board&qid=1689800932&sprefix=1%2F4+perf+board%2Caps%2C134&sr=8-3"> Link </a>|
+| Nylon Webbing | Holds the monitor to the mirror. | $11.99 | <a href="https://www.amazon.com/Buckle-Strap-Inch-Adjustable-Tri-Glide/dp/B08LD8CJ8D/ref=sr_1_1_sspa?crid=3B44Y1K6F1IMV&keywords=nylon+webbing&qid=1689801174&sprefix=nylon+webbing%2Caps%2C158&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a>|
 <!--
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
