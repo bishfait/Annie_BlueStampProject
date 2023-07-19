@@ -7,7 +7,10 @@
 
 <!--**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**-->
 
-<h6><img src="Annie-Project.png" width="250"/><h6>  <h6><img src="annieHeadshot.png" width="250"/></h6>
+<!--
+<h6><img src="Annie-Project.png" width="250"/><h6>
+<h6><img src="annieHeadshot.png" width="250"/></h6>
+-->
   
 # Final Milestone
 
@@ -55,6 +58,7 @@ After my time at BlueStamp Engineering, I hope to still engage in intensive proj
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 # Second Milestone
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B98T8BYGad0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Progress
