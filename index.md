@@ -10,8 +10,8 @@
 <h1 align="center"><img src="Annie-Project.png" width="250"/></h1>
 <h1 align="center"><img src="annieHeadshot.png" width="250"/></h1>
 -->
-<img src="https://github.com/bishfait/Annie_BlueStampProject/blob/gh-pages/Annie-Project.png" width="100" height="100">
-<img src="https://github.com/bishfait/Annie_BlueStampProject/blob/gh-pages/annieHeadshot.png" width="100" height="100">
+<img src="https://github.com/bishfait/Annie_BlueStampProject/blob/gh-pages/Annie-Project.png" width="100">
+<img src="https://github.com/bishfait/Annie_BlueStampProject/blob/gh-pages/annieHeadshot.png" width="100">
   
 # Final Milestone
 
