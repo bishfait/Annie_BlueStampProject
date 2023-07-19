@@ -10,8 +10,11 @@
 <h1 align="center"><img src="Annie-Project.png" width="250"/></h1>
 <h1 align="center"><img src="annieHeadshot.png" width="250"/></h1>
 -->
+<!--
 <img src="https://github.com/bishfait/Annie_BlueStampProject/blob/gh-pages/Annie-Project.png" width="200">
 <img src="https://github.com/bishfait/Annie_BlueStampProject/blob/gh-pages/annieHeadshot.png" width="200">
+-->
+![](Annie-Project.png){:width="50%" height="50%"}
   
 # Final Milestone
 
