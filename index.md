@@ -11,6 +11,8 @@
   
 # Final Milestone
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cvnLQ8fPs0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 After soldering and sticking the LEDs onto the wood along with the assembly of the mirror, the smart mirror was basically finished. A piece of 18 in x 24in plywood was cut for the monitor to be placed in. Grooves were made into the wood with a router tool for the LEDs to go into. After the plywood was cut, it was painted black. Before mounting the monitor into the plywood and frame, I had to solder and stick the LEDs into place. Since I wanted to make the LEDs go around the monitor, I cut the strip into each side of the rectangle and soldered the corners together. A hole was made at one corner of the grooves for the LED wiring to go through. 
 
 I put a TV mount on top of the monitor. Using that, nylon webbing can be threaded through the holes of the mount and then secured using grommets and screws. The screws are drilled into the back of the plywood. However, there was not a thick enough screw that could hold the eyelets in place without it being drilled into the mirror. Thus, I used shorter screws and secured them using washers. 
@@ -36,7 +38,11 @@ I learned about soldering wires together and grew comfortable using a soldering 
 <h1 align="center"><img src="Image 7-18-23 at 11.47 AM.jpg" width="500"/></h1>
 <h6 align="center">Formula for a voltage divider</h6>
 
-Lastly, I learned a lot about using the different tools necessary for the assembly of the mirror. I learned how to drill in screws to secure the plywood to the frame and then use an impact drill to drill in the screws. The impact drill was necessary for drilling in the grommets into place as well. At first, I felt very intimidated by these tools. However, after learning how they work and the safety needed during their use, I feel a lot more comfortable using these tools.
+
+Lastly, I learned a lot about using the different tools necessary for the assembly of the mirror. I learned how to drill in screws to secure the plywood to the frame and then use an impact drill to drill in the screws. The impact drill was necessary for drilling in the grommets into place as well. At first, I felt very intimidated by these tools. However, after learning how they work and the safety needed during their use, I feel a lot more comfortable using these tools. In addition, I feel a lot more capable committing to big projects such as this Smart Mirror project.
+
+## In the Future
+After my time at BlueStamp Engineering, I hope to still engage in intensive projects such as the Smart Mirror. Knowing that I could build the Smart Mirror, I hope that I would not feel discouraged of trying to build things that intrigue me. Regarding my career, I would love to continue to pursue majors relating to computer science or electrical engineering. When I was just coming into BlueStamp, I knew a decent amount of coding and a little bit about electrical engineering. After working intensively with both coding and circuitry, I believe either are good choices to pursue and get more familiar with.
 
 <!-- For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
@@ -456,12 +462,12 @@ while True:
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. -->
 
 | **Part** | **Note** | **Price** | **Link** |
-<!--
 |:--:|:--:|:--:|:--:|
 | DIY Soldering RGB Practice Kit | The Starter Project. Practice for soldering | $7.99 | <a href="https://www.amazon.com/Soldering-Practice-Learning-Electronics-Training/dp/B0BKM3D927"> Link </a> |
 |:--:|:--:|:--:|:--:|
 | Raspberry Pi 400 | Powers the Smart Mirror. | $70.00 | <a href="https://www.digikey.com/en/products/detail/raspberry-pi/SC0373/13282408"> Link </a> |
 |:--:|:--:|:--:|:--:|
+<!--
 | Wireless Mouse | Configures Raspberry Pi for the mirror display. Will be taken out later. | $7.79 | <a href="https://www.amazon.com/Wireless-TECKNET-Receiver-Portable-Adjustable/dp/B095HBY3RF?th=1"> Link </a> |
 |:--:|:--:|:--:|:--:|
 | Ultrasonic Distance Sensor | Tracks and calculates a person's distance from a mirror to turn on or off the mirror. | $4.50 | <a href="https://www.sparkfun.com/products/15569"> Link </a> |
